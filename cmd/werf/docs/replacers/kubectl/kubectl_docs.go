@@ -429,3 +429,12 @@ func GetCpDocs() structs.DocsStruct {
 
 	return docs
 }
+
+func GetCreateDocs() structs.DocsStruct {
+	var docs structs.DocsStruct
+
+	docs.LongMD = "Create a resource from a file or from stdin.\n\n" +
+		"JSON and YAML formats are accepted."
+
+	return docs
+}

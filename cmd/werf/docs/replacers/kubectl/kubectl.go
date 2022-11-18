@@ -214,5 +214,9 @@ func setNewDocs(cmd *cobra.Command) {
 		cmd.Annotations = map[string]string{
 			common.DocsLongMD: GetCpDocs().LongMD,
 		}
+	case "create -f FILENAME":
+		cmd.Annotations = map[string]string{
+			common.DocsLongMD: GetCreateDocs().LongMD,
+		}
 	}
 }
